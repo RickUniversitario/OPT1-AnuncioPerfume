@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Outfit:wght@400;700&display=swap');
+
+
+
+.Button {
+    height: 3rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    background: #3d8168;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-top: 1.25rem;
+    border-radius: 10px;
+}
+
+.Button span {
+    margin-left: 0.5rem;
+}
+
+.Button hover {
+    background: #1a4032;
+}
+
+
+
+
+@media (min-width: 901px) {
+
+    .Button {
+        margin-top: 1.875rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .Button {
+        margin-top: 1.25rem;
+    }
+
+}

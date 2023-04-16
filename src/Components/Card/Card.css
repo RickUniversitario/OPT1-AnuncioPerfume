@@ -1,0 +1,115 @@
+.Card {
+    display: flex;
+    border-radius: 10px;
+    padding: 1.75rem 1rem;
+}
+
+.Card__Image {
+    width: 100%;
+}
+
+.Card__Body {
+    background: #FFFFFF;
+}
+
+.Card__Body__Product {
+    letter-spacing: 5px;
+    font-size: .75rem;;
+    color: #6C7289;
+}
+
+.Card__Body__Title {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: #1C232B;
+    line-height: 1.85rem;
+}
+
+.Card__Body__Paragraph {
+    color: #6C7289;
+    line-height: 1.4375rem;
+    font-size: .875rem;
+}
+
+.Card__Body__Price {
+    display: flex;
+    align-items: center;
+}
+
+.Card__Body__Price p {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: #3D8168;
+}
+
+.Card__Body__Price span {
+    font-size: .875rem;
+    text-decoration: line-through;
+    color: #6C7289;
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 375px) {
+    .Card {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .Card__Body {
+        border-radius: 0 0 10px 10px;
+        padding: 1.5rem;
+    }
+
+    .Card__Body__Title {
+        margin-top: .75rem;
+    }    
+
+    .Card__Body__Paragraph {
+        margin-top: 1rem;
+    }
+
+    .Card__Body__Price {
+        margin-top: 1.5rem;
+    }
+
+    .Card__Image {
+        height: 240px;
+        background-size: contain;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .Card {
+        flex-direction: row;
+        width: 656px;
+        height: 450px;
+    }
+
+    .Card__Body {
+        border-radius: 0 10px 10px 0;
+        padding: 2rem;
+        width: 300px;
+        height: 450px;
+    }
+
+    .Card__Body__Title {
+        margin-top: 1.25rem;
+    }    
+
+    .Card__Body__Paragraph {
+        margin-top: 1.5rem;
+    }
+
+    .Card__Body__Price {
+        margin-top: 1.875rem;
+    }
+
+    .Card__Image {
+        height: 450px;
+        width: 300px;
+        background-size: contain;
+        border-radius: 10px 0 0 10px;
+    }
+}
